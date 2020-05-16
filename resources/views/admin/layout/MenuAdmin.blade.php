@@ -2,7 +2,7 @@
 <ul class="navbar-nav sidebar sidebar-light accordion" id="accordionSidebar">
       <div class="sidebar-brand d-flex align-items-center justify-content-center bg-info">
         <div class="sidebar-brand-text">
-          <img src="../img/logo.png" width="70">
+          <img src="{{asset ('/img/logo.png')}}" width="70">
         </div>
         <div class="sidebar-brand-text">Angelo Dance Studio</div>
       </div>
@@ -76,8 +76,8 @@
           <span>Data Pembayaran</span>
         </a>
       </li>
-      <li class="nav-item {{ Request::is('CrudProduk')? "active":""}}">
-        <a class="nav-link" href="{{url ('CrudProduk')}}">
+      <li class="nav-item {{ Request::is('admin/CrudProduk')? "active":""}}">
+        <a class="nav-link" href="{{url ('admin/CrudProduk')}}">
           <i class="fab fa-fw fa-wpforms"></i>
           <span>Produk</span>
         </a>

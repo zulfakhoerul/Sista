@@ -8,7 +8,7 @@
     <li class="nav-item dropdown no-arrow">
       <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown"
         aria-haspopup="true" aria-expanded="false">
-        <img class="img-profile rounded-circle" src="../admin/img/boy.png" style="max-width: 60px">
+        <img class="img-profile rounded-circle" src="{{ asset('admin/img/boy.png') }}" style="max-width: 60px">
           <span class="ml-2 d-none text-gray-800 d-lg-inline small">{{Session::get('nama_admin')}}</span>
         </a>
         <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
