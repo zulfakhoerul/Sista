@@ -109,20 +109,20 @@ Route::get('CrudAkunAdmin','CrudAkunAdminController@tampil_data');
 
 Route::get('CrudSeniTari','CrudSeniTariController@tampil_data');
 
-Route::get('CrudProduk','CrudProdukController@tampil_data');
-Route::get('TambahProduk','CrudProdukController@tambah');
+Route::get('admin/CrudProduk','CrudProdukController@tampil_data');
+Route::get('admin/CrudProduk/TambahProduk','CrudProdukController@tambah');
+Route::get('admin/CrudProduk/TambahProduk','CrudProdukController@pilihan');
 Route::post('AksiTambahProduk','CrudProdukController@store');
-Route::get('UbahProduk{id_user}','CrudProdukController@ubah');
-Route::put('AksiUbahProduk{id_user}','CrudProdukController@update');
-Route::get('HapusProduk{id_user}','CrudProdukController@delete');
+Route::get('admin/CrudProduk/UbahProduk{id_produk}','CrudProdukController@ubah');
+Route::put('admin/CrudProduk/AksiUbahProduk{id_produk}','CrudProdukController@update');
+Route::get('admin/CrudProduk/HapusProduk{id_produk}','CrudProdukController@delete');
+
 
 Route::get('CrudJenisProduk','CrudJenisProdukController@tampil_data');
 
 Route::get('CrudKelas','CrudKelasController@tampil_data');
 
 Route::get('CrudJadwal','CrudJadwalController@tampil_data');
-
-Route::get('CrudProduk','CrudProdukController@tampil_data');
 
 Route::get('CrudPendaftaran','CrudPendaftaranController@tampil_data');
 
