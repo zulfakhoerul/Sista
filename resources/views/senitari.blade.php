@@ -25,6 +25,7 @@
     <link rel="stylesheet" href="css/slick.css">
     <!-- style CSS -->
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="{{url('fontawesome-free/css/all.min.css')}}">
 </head>
 
 <body>
@@ -64,7 +65,7 @@
                         <div class="dropdown cart">
                             <a class="dropdown-toggle" href="#" id="navbarDropdown3" role="button"
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <i class="flaticon-bag"></i>
+                                <i class="fas fa-cart-plus"></i>
                             </a>
                             <!-- <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                                         <div class="single_product">
@@ -85,8 +86,9 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="breadcrumb_iner text-center">
-                        <div class="breadcrumb_iner_item">
-                            <h2>DAFTAR SENI TARI</h2>
+                        <div class="breadcrumb_iner_item"><i class="fas fa-crown"></i>
+                            <h2>JENIS<BR>
+                                <span>SENI TARI</span></h2>
                         </div>
                     </div>
                 </div>
@@ -102,7 +104,7 @@
                 <div class="col-lg-8">
                     <div class="single_project_item">
                         
-                        <span class="flaticon-love-and-romance"></span>
+                        <span><i class="fas fa-crown"></i></span>
                         <h2>TRADITIONAL DANCE</h2>
                         <img src="img/22.jpeg" alt="">
                         <p>Tari tradisional adalah suatu tarian yang menggabungkan semua gerakan yang mengandung makna
@@ -118,9 +120,9 @@
                                         <div class="media">
                                             <img src="img/icon/project_details_icon_1.svg" class="mr-4" alt="#">
                                             <div class="media-body">
-                                                <h5 class="mt-0">Start Time</h5>
-                                                <span>03.00 Sore</span>
-                                                <p>Kamis & Jum'at</p>
+                                                <h5 class="mt-0">Time</h5>
+                                                <span>03.00 Sore - 06:00 Sore</span>
+                                                <p></p>
                                             </div>
                                         </div>
                                     </div>
@@ -130,8 +132,8 @@
                                         <div class="media">
                                             <img src="img/icon/project_details_icon_2.svg" class="mr-4" alt="#">
                                             <div class="media-body">
-                                                <h5 class="mt-0">Finish Time</h5>
-                                                <span>06:00 Sore</span>
+                                                <h5 class="mt-0">Day</h5>
+                                                <span>Kamis & Jum'at</span>
                                                 <p></p>
                                             </div>
                                         </div>
@@ -154,7 +156,7 @@
                             </div>
                         </div>
 
-                        <span class="flaticon-love-and-romance"></span>
+                        <span><i class="fas fa-crown"></i></span>
                         <h2>MODERN DANCE</h2>
                         <img src="img/ttt.jpeg" alt="">
                         <p>Tari modern adalah merupakan tari yang didominasi oleh emosi atau rasa yang sebagaimana 
@@ -168,9 +170,9 @@
                                         <div class="media">
                                             <img src="img/icon/project_details_icon_1.svg" class="mr-4" alt="#">
                                             <div class="media-body">
-                                                <h5 class="mt-0">Start Time</h5>
-                                                <span>01.00 Siang</span>
-                                                <p>Jum'at & Sabtu</p>
+                                                <h5 class="mt-0">Time</h5>
+                                                <span>01.00 Siang - 02.30 Sore</span>
+                                                <p></p>
                                             </div>
                                         </div>
                                     </div>
@@ -180,8 +182,8 @@
                                         <div class="media">
                                             <img src="img/icon/project_details_icon_2.svg" class="mr-4" alt="#">
                                             <div class="media-body">
-                                                <h5 class="mt-0">Finish Time</h5>
-                                                <span>02.30 Sore</span>
+                                                <h5 class="mt-0">Day</h5>
+                                                <span>Jum'at & Sabtu</span>
                                                 <p></p>
                                             </div>
                                         </div>
@@ -203,7 +205,7 @@
                             </div>
                         </div>
 
-                        <span class="flaticon-love-and-romance"></span>
+                        <span><i class="fas fa-crown"></i></span>
                         <h2>K-POP DANCE</h2>
                         <img src="img/bp.jpeg" alt="">
                         <p>Tari K-POP kepanjangan dari Korean Pop ('Musik Pop Korea') adalah tari yang mengcover atau meniru
@@ -217,9 +219,9 @@
                                         <div class="media">
                                             <img src="img/icon/project_details_icon_1.svg" class="mr-4" alt="#">
                                             <div class="media-body">
-                                                <h5 class="mt-0">Start Time</h5>
-                                                <span>03.00 Sore</span>
-                                                <p>Sabtu & Minggu</p>
+                                                <h5 class="mt-0">Time</h5>
+                                                <span>03:00 Sore - 06:00 Sore</span>
+                                                <p></p>
                                             </div>
                                         </div>
                                     </div>
@@ -229,8 +231,8 @@
                                         <div class="media">
                                             <img src="img/icon/project_details_icon_2.svg" class="mr-4" alt="#">
                                             <div class="media-body">
-                                                <h5 class="mt-0">Finish Time</h5>
-                                                <span>06.00 Sore</span>
+                                                <h5 class="mt-0">Day</h5>
+                                                <span>Sabtu & Minggu</span>
                                                 <p></p>
                                             </div>
                                         </div>
@@ -252,7 +254,7 @@
                             </div>
                         </div>
 
-                        <span class="flaticon-love-and-romance"></span>
+                        <span><i class="fas fa-crown"></i></span>
                         <h2>HIPHOP DANCE</h2>
                         <img src="img/hiphop.jpg" alt="">
                         <p>Hip-Hop adalah sebuah gerakan kebudayaan yang mulai tumbuh sekitar tahun 1970’an yang dikembangkan 
@@ -265,9 +267,9 @@
                                         <div class="media">
                                             <img src="img/icon/project_details_icon_1.svg" class="mr-4" alt="#">
                                             <div class="media-body">
-                                                <h5 class="mt-0">Start Time</h5>
-                                                <span>10.00 Pagi</span>
-                                                <p>Sabtu & Minggu</p>
+                                                <h5 class="mt-0">Time</h5>
+                                                <span>10.00 Pagi - 12:00 Siang</span>
+                                                <p></p>
                                             </div>
                                         </div>
                                     </div>
@@ -277,8 +279,8 @@
                                         <div class="media">
                                             <img src="img/icon/project_details_icon_2.svg" class="mr-4" alt="#">
                                             <div class="media-body">
-                                                <h5 class="mt-0">Finish Time</h5>
-                                                <span>12.00 Siang</span>
+                                                <h5 class="mt-0">Day</h5>
+                                                <span>Sabtu & Minggu</span>
                                                 <p></p>
                                             </div>
                                         </div>

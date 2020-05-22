@@ -14,7 +14,7 @@
 /*Route::get('/', function () {
     return view('welcome');
 });*/
-
+//============HomePage=======================
 Route::get('/', function () {
     return view('index');
 });
@@ -39,6 +39,11 @@ Route::get('penyewaan', function () {
     return view('penyewaan');
 });
 
+Route::get('cek_keranjang', function () {
+    return view('cek_keranjang');
+});
+
+//===================Admin=============================
 Route::get('admin/DashboardAdmin', function () {
     return view('admin/DashboardAdmin');
 });
@@ -53,11 +58,19 @@ Route::get('admin/registeradmin', function () {
 Route::get('admin/users', function () {
     return view('admin/users');
 });
+
+//===============User===============================
 Route::get('user/pendaftaran_user', function () {
     return view('user/pendaftaran_user');
 });
 Route::get('user/form_sewa', function () {
     return view('user/form_sewa');
+});
+Route::get('user/form_keranjang', function () {
+    return view('user/form_keranjang');
+});
+Route::get('user/riwayat_sewa', function () {
+    return view('user/riwayat_sewa');
 });
 Route::get('anggota/loginAnggota', function () {
     return view('anggota/loginAnggota');

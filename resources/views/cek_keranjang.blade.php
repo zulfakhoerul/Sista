@@ -2,7 +2,7 @@
 <html lang="zxx">
 
 <head>
-    <!-- Required meta tags -->
+<!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Sista</title>
@@ -18,18 +18,15 @@
     <!-- flaticon CSS -->
     <link rel="stylesheet" href="css/flaticon.css">
     <link rel="stylesheet" href="css/themify-icons.css">
-    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/nice-select.css">
     <!-- font awesome CSS -->
     <link rel="stylesheet" href="css/magnific-popup.css">
     <!-- swiper CSS -->
     <link rel="stylesheet" href="css/slick.css">
     <!-- style CSS -->
     <link rel="stylesheet" href="css/style.css">
-
-    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="{{url('fontawesome-free/css/all.min.css')}}">
 </head>
-
 <body>
     <!--::header part start::-->
     <header class="main_menu home_menu">
@@ -46,7 +43,7 @@
 
                         <div class="collapse navbar-collapse main-menu-item" id="navbarSupportedContent">
                             <ul class="navbar-nav">
-                                <li class="nav-item">
+                            <li class="nav-item">
                                     <a class="nav-link" href="{{ url('/') }}">Home</a>
                                 </li>
                                 <li class="nav-item">
@@ -82,164 +79,96 @@
     </header>
     <!-- Header part end-->
 
-    <!--::banner part start::-->
-    <section class="banner_part">
+    <!-- breadcrumb start-->
+    <section class="breadcrumb breadcrumb_bg">
         <div class="container">
-            <div class="row align-items-center justify-content-end">
-                <div class="col-lg-5">
-                    <div class="banner_text text-center">
-                        <div class="banner_text_iner"> 
-                         <!--<div class="banner_text_iner2">
-                                 <h5>Sanggar Tari</h5>
-                            <h1>Angelo <span>Dance School</span></h1>
-                            <p>UNLIMITED TOTALITY</p>
-                           <a href="#" class="btn_1">Login</a>
-                            </div>-->
-
-                            <div id="card1">
-                                    <div id="card-content">
-                                <div id="card-title">
-                                    <h2>LOGIN</h2>
-                                    <div class="underline-title"></div>
-                                </div>
-                                </div>
-                                @if(\Session::has('alert'))
-                                    <div class="alert alert-danger">
-                                        <div>{{Session::get('alert')}}</div>
-                                    </div>
-                                @endif
-                                @if(\Session::has('alert-success'))
-                                    <div class="alert alert-success">
-                                        <div>{{Session::get('alert-success')}}</div>
-                                    </div>
-                                @endif
-                                <form action="{{ url('/loginUserPost') }}" method="post" class="form"> 
-                                {{ csrf_field() }}
-                                            <label for="user-email" style="padding-top:13px">&nbsp;Email</label>
-                                    <input
-                                    id="user-email"
-                                    class="form-content"
-                                    type="email"
-                                    name="email"
-                                    autocomplete="on"
-                                    required />
-                                    <div class="form-border"></div>
-                                    <label for="user-password" style="padding-top:22px">&nbsp;Password</label>
-                                    <input
-                                    id="user-password"
-                                    class="form-content"
-                                    type="password"
-                                    name="password"
-                                    required />
-                                    <div class="form-border"></div>
-                                    
-                                    <input id="submit-btn" type="submit" name="submit" value="LOGIN" /><br> 
-                                    <div>
-                                    <center>
-                                    <label for="daftar">Ingin Sewa Kostum?</label>
-                                    <a class="link"  href="{{ url('user/pendaftaran_user') }}">Daftar</a>
-                                    </center>
-                                    </div> 
-                               </form>
-                            </div>
-                            
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="breadcrumb_iner text-center">
+                        <div class="breadcrumb_iner_item">
+                            <h2>Penyewaan</h2>
+                            <h2><span>Kostum & Aksesoris</span></h2>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <!--::banner part start::-->
+    <!-- breadcrumb start-->
 
-    <!--::about_us part start::-->
-    <section class="about_us padding_top">
+  <!--::pricing part start::-->
+    <section class="pricing_part section_padding">
         <div class="container">
-            <div class="row align-items-center justify-content-center">
-                <div class="col-lg-8">
-                    <div class="about_us_text text-center">
-                        <h5>ANGELO GALERY</h5>
-                        <h2>Sanggar Tari "Angelo Dance School"</h2>
-                        <p></p>
-                        <!--<a href="#" class="btn_2">read more</a>-->
+            
+            
+                
+
+                
+            </div>
+            <div class="row justify-content-center">
+            <div class="card" >
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-md-6 mt-5">
+                                    <img src="../img/gallery/tari1.jpeg" class="rounded mx-auto d-block" width="500">
+                                </div>
+                                <div class="col-md-6 mt-5">
+                                    @if(\Session::has('alert'))
+                                        <div class="alert alert-danger" align="center">
+                                            <div>{{Session::get('alert')}}</div>
+                                        </div>
+                                    @endif
+                                    <h2>Kostum</h2>
+                                    <table class="table">
+                                    <form action="">
+                                        <thead>
+                                            <tr>
+                                                <td><strong>Nama Produk</strong></td>
+                                                <td width="15px">:</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td><strong>Keterangan</strong> </td>
+                                                <td width="15px">:</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td><strong>Jumlah Sewa (per kostum)</strong> </td>
+                                                <td width="15px">:</td>
+                                                <td><input type="text" name="" class="form-control" required> </td>
+                                            </tr>
+                                            <tr>
+                                                <td><strong>Total Harga</strong> </td>
+                                                <td width="15px">:</td>
+                                                <td></td>
+                                            </tr>
+                                            
+                                            <tr>
+                                                <td>
+                                                    <button type="submit" class="button-contactForm btn_2"><i class="fas fa-cart-plus"></i>  Sewa</button> 
+                                                    <td width="15px"></td>
+                                                    <td>
+                                                        <a href="{{ url('penyewaan') }}" class="button-contactFrom btn_2"> Batal</a>
+                                                    </td>
+                                                </td>
+                                               
+                                            </tr>
+                                        </thead>
+                                    </form>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                </div>
+
             </div>
         </div>
     </section>
-    <!--::about_us part end::-->
-
-    <!-- gallery_part part start-->
-    
-    <!-- gallery_part part end-->
-
-    <!--::our_service part start::-->
-    <section class="our_service padding_bottom">
-        <div class="container">
-        <div class="section-top-border">
-				<h3></h3>
-				<div class="row gallery-item">
-					<div class="col-md-4">
-						<a href="img/22.jpeg" class="img-pop-up img-gal gallery_img">
-							<div class="single-gallery-image" style="background: url(img/22.jpeg);"></div>
-						</a>
-					</div>
-					<div class="col-md-4">
-						<a href="img/tari1.jpeg" class="img-pop-up img-gal gallery_img">
-							<div class="single-gallery-image" style="background: url(img/tari1.jpeg);"></div>
-						</a>
-					</div>
-					<div class="col-md-4">
-						<a href="img/intro_video_bg.jpeg" class="img-pop-up img-gal gallery_img">
-							<div class="single-gallery-image" style="background: url(img/intro_video_bg.jpeg);"></div>
-						</a>
-					</div>
-					<div class="col-md-6">
-						<a href="img/tari3.jpeg" class="img-pop-up img-gal gallery_img">
-							<div class="single-gallery-image" style="background: url(img/tari3.jpeg);"></div>
-						</a>
-					</div>
-					<div class="col-md-6">
-						<a href="img/tari4.jpeg" class="img-pop-up img-gal gallery_img">
-							<div class="single-gallery-image" style="background: url(img/tari4.jpeg);"></div>
-						</a>
-					</div>
-					<div class="col-md-4">
-						<a href="img/ttt.jpeg" class="img-pop-up img-gal gallery_img">
-							<div class="single-gallery-image" style="background: url(img/ttt.jpeg);"></div>
-						</a>
-					</div>
-					<div class="col-md-4">
-						<a href="img/bp.jpeg" class="img-pop-up img-gal gallery_img">
-							<div class=" single-gallery-image" style="background: url(img/bp.jpeg);"></div>
-						</a>
-					</div>
-					<div class="col-md-4">
-						<a href="img/123.jpeg" class="img-pop-up img-gal gallery_img">
-							<div class="single-gallery-image" style="background: url(img/123.jpeg);"></div>
-						</a>
-					</div>
-				</div>
-			</div>
-        </div>
-    </section>
-    <!--::our_service part end::-->
-
-    <!--::review_part part start::-->
-    
-    <!--::review_part part end::-->
-
-    <!--::pricing part start::-->
-   
     <!--::pricing part end::-->
-
-    <!--::blog part start::-->
-    
-    <!--::blog part end::-->
-
 
     <!--::footer_part start::-->
     <footer class="footer-area">
-        <div class="container">
+    <div class="container">
             <div class="row justify-content-between">
                 
                 <div class="col-sm-6 col-md-6 col-lg-3">

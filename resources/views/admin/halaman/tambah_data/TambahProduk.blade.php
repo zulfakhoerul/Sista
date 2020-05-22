@@ -5,9 +5,9 @@
           <div class="d-sm-flex align-items-center justify-content-between mb-4">
             <h1 class="h3 mb-0 text-gray-800">Tambah Produk</h1>
             <ol class="breadcrumb">  
-              <li class="breadcrumb-item"><a href="{{url ('DashboardAdmin')}}">Dashboard</a></li>
-              <li class="breadcrumb-item"><a href="{{url ('CrudAkunUser')}}">Data Akun User</a></li>
-              <li class="breadcrumb-item active" aria-current="page">Tambah Data Akun User</li>            
+              <li class="breadcrumb-item"><a href="{{url ('admin/DashboardAdmin')}}">Dashboard</a></li>
+              <li class="breadcrumb-item"><a href="{{url ('admin/CrudProduk')}}">Data Produk</a></li>
+              <li class="breadcrumb-item active" aria-current="page">Tambah Data Produk</li>            
             </ol>
           </div>
           <hr>
@@ -37,33 +37,47 @@
 
                     <!------------ Alert----------->
 
-                  <form class="contact-form-area contact-page-form contact-form text-left" action="{{url('AksiTambahAkunUser')}}" method="post">
+                  <form enctype="multipart/form-data" class="contact-form-area contact-page-form contact-form text-left" action="{{url('AksiTambahProduk')}}" method="post">
 
                     {{csrf_field()}}
 
                     <div class="form-group">
-                      <label>Nama Akun User</label>
-                      <input type="text" class="form-control" name="nama" placeholder="Masukkan Nama Akun">
+                      <label><b>Nama Produk</b></label>
+                      <input type="text" class="form-control" name="nama_produk" placeholder="Masukkan Nama Produk">
                     </div>
                     <div class="form-group">
-                      <label>Username</label>
-                      <input type="text" class="form-control" name="username" placeholder="Masukkan Username">
+                      <label><b>Harga</b></label>
+                      <input type="number" minlength="0" class="form-control" name="harga" placeholder="Masukkan Harga">
                     </div>
                     <div class="form-group">
-                      <label>Password</label>
-                      <input type="password" class="form-control" name="password"placeholder="Masukkan Password">
+                      <label><b>Stok</b></label>
+                      <input type="number" minlength="0" class="form-control" name="stok" placeholder="Masukkan Stok">
                     </div>
                     <div class="form-group">
-                      <label>Email</label>
-                      <input type="email" class="form-control" name="email" placeholder="Masukkan Email">
+                      <label><b>Jenis Produk</b></label>
+                      <div class="form-select">
+                        <select name="jenis_produk" class="form-control">
+                          <option>Pilih Jenis Produk</option>
+                          @foreach($JenisProduks as $JenisProduk)
+                          <option value="{{$JenisProduk->id_jenis_produk}}">{{$JenisProduk->nama_jenis_produk}}</option>
+                          @endforeach
+                        <select>
+                      </div>
                     </div>
                     <div class="form-group">
-                      <label>No Handphone</label>
-                      <input type="number" min="0" class="form-control" name="no_hp" placeholder="Masukkan Nomer Hp">
+                      <label><b>Seni Tari</b></label>
+                      <div class="form-select">
+                        <select name="seni_tari" class="form-control">
+                          <option>Pilih Seni Tari</option>
+                          @foreach($SeniTaris as $SeniTari)
+                          <option value="{{$SeniTari->id_seni_tari}}">{{$SeniTari->nama_seni_tari}}</option>
+                          @endforeach
+                        <select>
+                      </div>
                     </div>
                     <div class="form-group">
-                      <label>Alamat</label>
-                      <textarea class="form-control" name="alamat" placeholder="Masukkan Alamat"></textarea>
+                      <label><b>Gambar Produk</b></label>
+                      <input type="file" class="form-control" name="gambar_produk">
                     </div>
                     <div class="form-group"> 
                         <input type="reset" class="btn btn-secondary"  value="Batal">

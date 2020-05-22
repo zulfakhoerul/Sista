@@ -25,6 +25,7 @@
     <link rel="stylesheet" href="css/slick.css">
     <!-- style CSS -->
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="{{url('fontawesome-free/css/all.min.css')}}">
 </head>
 <body>
     <!--::header part start::-->
@@ -63,7 +64,7 @@
                         <div class="dropdown cart">
                             <a class="dropdown-toggle" href="#" id="navbarDropdown3" role="button"
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <i class="flaticon-bag"></i>
+                                <i class="fas fa-cart-plus"></i>
                             </a>
                              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                                     <div class="single_product">
@@ -84,7 +85,7 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="breadcrumb_iner text-center">
-                        <div class="breadcrumb_iner_item">
+                        <div class="breadcrumb_iner_item"><i class="fas fa-crown"></i>
                             <h2>Penyewaan</h2>
                             <h2><span>Kostum & Aksesoris</span></h2>
                         </div>
@@ -151,7 +152,7 @@
                             <h4><strong>Kostum Jaipong</strong></h4>
                             <img src="img/gallery/tari1.jpeg" style="position: relative;" height="200">
                             <br><br>
-                            <a href="{{ url('user/form_sewa') }}" class="btn_2">Sewa</a>
+                            <a href="{{ url('cek_keranjang') }}" class="btn_2">Sewa</a>
                         </div>
                     </div>
                 </div>

@@ -60,9 +60,7 @@
                     <div class="form-group">
                       <input type="submit" class="btn bg-gradient-default btn-block text-white" value="Login">
                     </div>
-                    <center>
-                      <a class="link" href="{{ url('/admin/registeradmin') }}">Daftar</a>
-                    </center>
+                    
                    
                   </form>
                   

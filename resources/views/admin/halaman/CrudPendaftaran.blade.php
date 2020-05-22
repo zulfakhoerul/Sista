@@ -24,7 +24,7 @@
                         <th>No</th>
                         <th>Id Pendaftaran</th>
                         <th>Nama Pendaftar</th>
-                        <th>Username</th>
+                  
                         <th>Password</th>
                         <th>Email</th>
                         <th>Tempat, Tanggal Lahir</th>
@@ -43,7 +43,7 @@
                         <th>No</th>
                         <th>Id Pendaftaran</th>
                         <th>Nama Pendaftar</th>
-                        <th>Username</th>
+                     
                         <th>Password</th>
                         <th>Email</th>
                         <th>Tempat, Tanggal Lahir</th>
@@ -65,12 +65,12 @@
                       <tr>
                         <td>{{$no++}}</td>
                         <td>{{$tampil->id_pendaftaran}}</td>
-                        <td>{{$tampil->nama_pendaftar}}</td>
-                        <td>{{$tampil->username}}</td>
+                        <td>{{$tampil->nama}}</td>
+                      
                         <td>{{$tampil->password}}</td>
                         <td>{{$tampil->email}}</td>
-                        <td>{{$tampil->ttl}}</td>
-                        <td>{{$tampil->jk}}</td>
+                        <td>{{$tampil->tanggal_lahir}}</td>
+                        <td>{{$tampil->jenis_kelamin}}</td>
                         <td>{{$tampil->no_hp}}</td>
                         <td>{{$tampil->alamat}}</td>
                         <td>{{$tampil->id_user}}</td>

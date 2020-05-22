@@ -27,6 +27,7 @@
     <link rel="stylesheet" href="../css/style.css">
 
     <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="{{url('fontawesome-free/css/all.min.css')}}">
 </head>
 
 <body>
@@ -45,15 +46,20 @@
 
                         <div class="collapse navbar-collapse main-menu-item" id="navbarSupportedContent">
                             <ul class="navbar-nav">
-                                
+                            <li class="nav-item">
+                                    <a class="nav-link" href="{{ url('user/form_sewa') }}"><i class="fas fa-shopping-cart"></i> </a>
+                            </li>
                                 <li class="nav-item dropdown">
                                     <a class="nav-link dropdown-toggle"  id="navbarDropdownpro"
                                         role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                         {{Session::get('nama_user')}}
                                     </a>
                                     <div class="dropdown-menu" aria-labelledby="navbarDropdownpro">
-                                        <a class="dropdown-item" href="portfolio.html"><center>Data Sewa</center></a>
-                                        <a class="dropdown-item" href="/logoutUser"><center>Logout<center></a>
+                                        <center>
+                                        <a class="dropdown-item" href="{{ url('user/home_user') }}"><i class="fas fa-mask"></i> Kostum & Aksesoris</a>
+                                        <a class="dropdown-item" href="{{ url('user/riwayat_sewa') }}"><i class="fas fa-receipt"></i> Riwayat Sewa</a>
+                                        <a class="dropdown-item" href="/logoutUser"><i class="fas fa-sign-out-alt"></i> Logout </a>
+                                        </center>
                                     </div>
                                 </li>
 
@@ -75,10 +81,10 @@
                                     <div class="dropdown-menu" aria-labelledby="navbarDropdown1">
                                         <a class="dropdown-item" href="elements.html">Elements</a>
                                     </div>
-                                </li>
+                                </li>-->
                                 
                             </ul>
-                            <ul>
+                            <!--<ul>
                                 <li>
                                     <a class="nav-link" >{{Session::get('nama_user')}}</a>
                                 </li>
@@ -93,8 +99,8 @@
                         <div class="dropdown cart">
                             <!--<a class="dropdown-toggle" href="#" id="navbarDropdown3" role="button"
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <i class="flaticon-bag"></i>-->
-                            </a>
+                                <i class="flaticon-bag"></i>
+                            </a>-->
                              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                                     <div class="single_product">
     
@@ -115,8 +121,9 @@
                 <div class="col-lg-12">
                     <div class="breadcrumb_iner text-center">
                         <div class="breadcrumb_iner_item">
-                            <!--<h2>Penyewaan</h2>-->
-                            <h2><span>Kostum & Aksesoris</span></h2>
+                        <h2>Penyewaan Kostum & Aksesoris Tari</h2>
+                            
+                            <h2><span>Angelo Dance School</span></h2>
                         </div>
                     </div>
                 </div>
@@ -141,7 +148,7 @@
                             <p>Ket : Ada 4 baju lengkap beserta aksesoris nya</p>
                             <p>Harga Sewa : 100.000</p>
                             <br><br>
-                            <a href="{{ url('user/form_sewa') }}" class="btn_2">Sewa</a>
+                            <a href="{{ url('user/form_keranjang') }}" class="btn_2">Sewa</a>
                         </div>
                     </div>
                 </div>

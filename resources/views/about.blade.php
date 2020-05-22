@@ -25,6 +25,7 @@
     <link rel="stylesheet" href="css/slick.css">
     <!-- style CSS -->
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="{{url('fontawesome-free/css/all.min.css')}}">
 </head>
 
 <body>
@@ -64,7 +65,7 @@
                         <div class="dropdown cart">
                             <a class="dropdown-toggle" href="#" id="navbarDropdown3" role="button"
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <i class="flaticon-bag"></i>
+                                <i class="fas fa-cart-plus"></i>
                             </a>
                             <!-- <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                                         <div class="single_product">
@@ -85,8 +86,9 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="breadcrumb_iner text-center">
-                        <div class="breadcrumb_iner_item">
-                            <h2>About <span>Angelo Dance School</span></h2>
+                        <div class="breadcrumb_iner_item"><i class="fas fa-crown"></i>
+                            <h2>About <br> 
+                                <span>Angelo Dance School</span></h2>
                         </div>
                     </div>
                 </div>

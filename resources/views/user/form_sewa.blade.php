@@ -26,7 +26,7 @@
     <!-- style CSS -->
     <link rel="stylesheet" href="../css/style.css">
 
-    <link rel="stylesheet" href="../style.css">
+    
     <link rel="stylesheet" href="{{url('fontawesome-free/css/all.min.css')}}">
 
 </head>
@@ -48,7 +48,7 @@
                         <div class="collapse navbar-collapse main-menu-item" id="navbarSupportedContent">
                             <ul class="navbar-nav">
                             <li class="nav-item">
-                                    <a class="nav-link" href="{{ url('about') }}"><i class="fas fa-shopping-cart"></i> Keranjang</a>
+                                    <a class="nav-link" href="{{ url('#') }}"><i class="fas fa-shopping-cart"></i> </a>
                             </li>
                                 <li class="nav-item dropdown">
                                     <a class="nav-link dropdown-toggle"  id="navbarDropdownpro"
@@ -56,43 +56,15 @@
                                         {{Session::get('nama_user')}}
                                     </a>
                                     <div class="dropdown-menu" aria-labelledby="navbarDropdownpro">
-                                        <a class="dropdown-item" href="portfolio.html"><center>Data Sewa</center></a>
-                                        <a class="dropdown-item" href="/logoutUser"><center>Logout<center></a>
+                                    <center>
+                                        <a class="dropdown-item" href="{{ url('user/home_user') }}"><i class="fas fa-mask"></i> Kostum & Aksesoris</a>
+                                        <a class="dropdown-item" href="{{ url('user/riwayat_sewa') }}"><i class="fas fa-receipt"></i> Riwayat Sewa</a>
+                                        <a class="dropdown-item" href="/logoutUser"><i class="fas fa-sign-out-alt"></i> Logout </a>
+                                        </center>
                                     </div>
                                 </li>
 
-                               <!-- <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="blog.html" id="navbarDropdown"
-                                        role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        Blog
-                                    </a>
-                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                        <a class="dropdown-item" href="blog.html"> blog</a>
-                                        <a class="dropdown-item" href="single-blog.html">Single blog</a>
-                                    </div>
-                                </li>
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="blog.html" id="navbarDropdown1"
-                                        role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        {{Session::get('nama_user')}}
-                                    </a>
-                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown1">
-                                        <a class="dropdown-item" href="elements.html">Elements</a>
-                                    </div>
-                                </li>
-                                
-                            </ul>
-                            <ul>
-                                <li>
-                                    <a class="nav-link" >{{Session::get('nama_user')}}</a>
-                                </li>
-                            </ul>
-                            <ul>
-                                <li class="nav-link">
-                                <a href="/logoutUser" class="genric-btn info-border circle">Logout</a>
-                                
-                                </li>
-                            </ul>-->
+                               
                         </div>
                         <div class="dropdown cart">
                             <!--<a class="dropdown-toggle" href="#" id="navbarDropdown3" role="button"
@@ -165,7 +137,7 @@
                                                     onblur="this.placeholder = 'Tanggal Lahir'" placeholder=''>
                                             </tr>
                                             <tr>
-                                                <td><strong>Tanggal Kembali</strong> </td>
+                                                <td><strong>Tanggal Pengembalian</strong> </td>
                                                 <td width="15px">:</td>
                                                 <td><input class="form-control" name="tanggal_lahir" id="tanggal_lahir" type="date" onfocus="this.placeholder = ''"
                                                     onblur="this.placeholder = 'Tanggal Lahir'" placeholder=''>
@@ -178,7 +150,7 @@
                                             <tr>
                                                 <td><strong>Total Harga</strong> </td>
                                                 <td width="15px">:</td>
-                                                <td><input type="text" name="nama_penyewa" class="form-control" required> </td>
+                                                <td></td>
                                             </tr>
                                             <tr>
                                                 <td><strong>Foto KTP/Identitas Diri</strong></td>
@@ -187,8 +159,13 @@
                                             </tr>
                                             <tr>
                                                 <td>
-                                                    <button type="submit" class="button-contactForm btn_2"><i class="fas fa-cart-plus"></i>  Sewa</button>
+                                                    <button type="submit" class="button-contactForm btn_2"><i class="fas fa-cart-plus"></i>  Checkout</button> 
+                                                    <td width="15px"></td>
+                                                    <td>
+                                                        <a href="{{ url('user/home_user') }}" class="button-contactFrom btn_2"> Batal</a>
+                                                    </td>
                                                 </td>
+                                               
                                             </tr>
                                         </thead>
                                     </form>

@@ -6,27 +6,27 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Sista</title>
-    <link rel="icon" href="img/logo.png">
+    <link rel="icon" href="../img/logo.png">
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
     <!-- animate CSS -->
-    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="../css/animate.css">
     <!-- owl carousel CSS -->
-    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="../css/owl.carousel.min.css">
     <!-- font awesome CSS -->
-    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="../css/all.css">
     <!-- flaticon CSS -->
-    <link rel="stylesheet" href="css/flaticon.css">
-    <link rel="stylesheet" href="css/themify-icons.css">
-    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="../css/flaticon.css">
+    <link rel="stylesheet" href="../css/themify-icons.css">
+    <link rel="stylesheet" href="../css/swiper.min.css">
     <!-- font awesome CSS -->
-    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="../css/magnific-popup.css">
     <!-- swiper CSS -->
-    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="../css/slick.css">
     <!-- style CSS -->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="../css/style.css">
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../style.css">
     <link rel="stylesheet" href="{{url('fontawesome-free/css/all.min.css')}}">
 </head>
 
@@ -37,7 +37,7 @@
             <div class="row align-items-center">
                 <div class="col-lg-12">
                     <nav class="navbar navbar-expand-lg navbar-light">
-                        <a class="navbar-brand" href="index.html"> <img src="img/logo.png" alt="logo"> </a>
+                        <a class="navbar-brand" href="index.html"> <img src="../img/logo.png" alt="logo"> </a>
                         <button class="navbar-toggler" type="button" data-toggle="collapse"
                             data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                             aria-expanded="false" aria-label="Toggle navigation">
@@ -47,27 +47,59 @@
                         <div class="collapse navbar-collapse main-menu-item" id="navbarSupportedContent">
                             <ul class="navbar-nav">
                                 <li class="nav-item">
-                                    <a class="nav-link" href="{{ url('/') }}">Home</a>
+                                        <a class="nav-link" href="{{ url('user/form_sewa') }}"><i class="fas fa-shopping-cart"></i> </a>
                                 </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="{{ url('senitari') }}">Seni Tari</a>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle"  id="navbarDropdownpro"
+                                        role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        {{Session::get('nama_user')}}
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="navbarDropdownpro">
+                                    <center>
+                                        <a class="dropdown-item" href="{{ url('user/home_user') }}"><i class="fas fa-mask"></i> Kostum & Aksesoris</a>
+                                        <a class="dropdown-item" href="{{ url('user/riwayat_sewa') }}"><i class="fas fa-receipt"></i> Riwayat Sewa</a>
+                                        <a class="dropdown-item" href="/logoutUser"><i class="fas fa-sign-out-alt"></i> Logout </a>
+                                        </center>
+                                    </div>
                                 </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="{{ url('pendaftarann') }}">Pendaftaran</a>
+
+                               <!-- <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="blog.html" id="navbarDropdown"
+                                        role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Blog
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <a class="dropdown-item" href="blog.html"> blog</a>
+                                        <a class="dropdown-item" href="single-blog.html">Single blog</a>
+                                    </div>
                                 </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="{{ url('penyewaan') }}">Penyewaan</a>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="blog.html" id="navbarDropdown1"
+                                        role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        {{Session::get('nama_user')}}
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown1">
+                                        <a class="dropdown-item" href="elements.html">Elements</a>
+                                    </div>
                                 </li>
-                               
-                                <li class="nav-item">
-                                    <a class="nav-link" href="{{ url('about') }}">About</a>
+                                
+                            </ul>
+                            <ul>
+                                <li>
+                                    <a class="nav-link" >{{Session::get('nama_user')}}</a>
                                 </li>
                             </ul>
+                            <ul>
+                                <li class="nav-link">
+                                <a href="/logoutUser" class="genric-btn info-border circle">Logout</a>
+                                
+                                </li>
+                            </ul>-->
                         </div>
                         <div class="dropdown cart">
-                            <a class="dropdown-toggle" href="#" id="navbarDropdown3" role="button"
+                            <!--<a class="dropdown-toggle" href="#" id="navbarDropdown3" role="button"
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <i class="fas fa-cart-plus"></i>
+                                <i class="flaticon-bag"></i>-->
                             </a>
                              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                                     <div class="single_product">
@@ -82,159 +114,71 @@
     </header>
     <!-- Header part end-->
 
-    <!--::banner part start::-->
-    <section class="banner_part">
+    <!-- breadcrumb start-->
+    <section class="breadcrumb breadcrumb_bg">
         <div class="container">
-            <div class="row align-items-center justify-content-end">
-                <div class="col-lg-5">
-                    <div class="banner_text text-center">
-                        <div class="banner_text_iner"> 
-                         <!--<div class="banner_text_iner2">
-                                 <h5>Sanggar Tari</h5>
-                            <h1>Angelo <span>Dance School</span></h1>
-                            <p>UNLIMITED TOTALITY</p>
-                           <a href="#" class="btn_1">Login</a>
-                            </div>-->
-
-                            <div id="card1">
-                                    <div id="card-content">
-                                <div id="card-title">
-                                    <h2>LOGIN</h2>
-                                    <div class="underline-title"></div>
-                                </div>
-                                </div>
-                                @if(\Session::has('alert'))
-                                    <div class="alert alert-danger">
-                                        <div>{{Session::get('alert')}}</div>
-                                    </div>
-                                @endif
-                                @if(\Session::has('alert-success'))
-                                    <div class="alert alert-success">
-                                        <div>{{Session::get('alert-success')}}</div>
-                                    </div>
-                                @endif
-                                <form action="{{ url('/loginUserPost') }}" method="post" class="form"> 
-                                {{ csrf_field() }}
-                                            <label for="user-email" style="padding-top:13px">&nbsp;Email</label>
-                                    <input
-                                    id="user-email"
-                                    class="form-content"
-                                    type="email"
-                                    name="email"
-                                    autocomplete="on"
-                                    required />
-                                    <div class="form-border"></div>
-                                    <label for="user-password" style="padding-top:22px">&nbsp;Password</label>
-                                    <input
-                                    id="user-password"
-                                    class="form-content"
-                                    type="password"
-                                    name="password"
-                                    required />
-                                    <div class="form-border"></div>
-                                    
-                                    <input id="submit-btn" type="submit" name="submit" value="LOGIN" /><br> 
-                                    <div>
-                                    <center>
-                                    <label for="daftar">Ingin Sewa Kostum?</label>
-                                    <a class="link"  href="{{ url('user/pendaftaran_user') }}">Daftar</a>
-                                    </center>
-                                    </div> 
-                               </form>
-                            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="breadcrumb_iner text-center">
+                        <div class="breadcrumb_iner_item">
+                        <h2>Penyewaan Kostum & Aksesoris Tari</h2>
                             
+                            <h2><span>Angelo Dance School</span></h2>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <!--::banner part start::-->
+    <!-- breadcrumb start-->
 
-    <!--::about_us part start::-->
-    <section class="about_us padding_top">
-        <div class="container">
-            <div class="row align-items-center justify-content-center">
-                <div class="col-lg-8">
-                    <div class="about_us_text text-center">
-                        <h5>ANGELO GALERY</h5>
-                        <h2>Sanggar Tari "Angelo Dance School"</h2>
-                        <p></p>
-                        <!--<a href="#" class="btn_2">read more</a>-->
-                    </div>
-                </div>
+  <!--::pricing part start::-->
+    <section class="pricing_part section_padding">
+        <div class="container">    
+            
+            <div class="row justify-content-center">
+            <table cellspacing='0'>
+		<thead>
+			<tr>
+				<th>Nama Penyewa</th>
+				<th>Tanggal sewa</th>
+				<th>Tanggal Pengembalian</th>
+				<th>Email</th>
+                <th>Foto KTP</th>
+                <th>Harga</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>Andi</td>
+				<td>Jakarta Selatan</td>
+				<td>Web Designer</td>
+				<td>21</td>
+			</tr>
+			<tr>
+				<td>Budi</td>
+				<td>Bandung</td>
+				<td>Web Developer</td>
+				<td>26</td>
+			</tr>
+			<tr>
+				<td>Cahyo</td>
+				<td>Bekasi</td>
+				<td>Web Programmer</td>
+				<td>29</td>
+			</tr>
+			<tr>
+				<td>Darma</td>
+				<td>Bali</td>
+				<td>Teknisi</td>
+				<td>35</td>
+			</tr>
+		</tbody>
+	</table>
             </div>
         </div>
     </section>
-    <!--::about_us part end::-->
-
-    <!-- gallery_part part start-->
-    
-    <!-- gallery_part part end-->
-
-    <!--::our_service part start::-->
-    <section class="our_service padding_bottom">
-        <div class="container">
-        <div class="section-top-border">
-				<h3></h3>
-				<div class="row gallery-item">
-					<div class="col-md-4">
-						<a href="img/22.jpeg" class="img-pop-up img-gal gallery_img">
-							<div class="single-gallery-image" style="background: url(img/22.jpeg);"></div>
-						</a>
-					</div>
-					<div class="col-md-4">
-						<a href="img/tari1.jpeg" class="img-pop-up img-gal gallery_img">
-							<div class="single-gallery-image" style="background: url(img/tari1.jpeg);"></div>
-						</a>
-					</div>
-					<div class="col-md-4">
-						<a href="img/intro_video_bg.jpeg" class="img-pop-up img-gal gallery_img">
-							<div class="single-gallery-image" style="background: url(img/intro_video_bg.jpeg);"></div>
-						</a>
-					</div>
-					<div class="col-md-6">
-						<a href="img/tari3.jpeg" class="img-pop-up img-gal gallery_img">
-							<div class="single-gallery-image" style="background: url(img/tari3.jpeg);"></div>
-						</a>
-					</div>
-					<div class="col-md-6">
-						<a href="img/tari4.jpeg" class="img-pop-up img-gal gallery_img">
-							<div class="single-gallery-image" style="background: url(img/tari4.jpeg);"></div>
-						</a>
-					</div>
-					<div class="col-md-4">
-						<a href="img/ttt.jpeg" class="img-pop-up img-gal gallery_img">
-							<div class="single-gallery-image" style="background: url(img/ttt.jpeg);"></div>
-						</a>
-					</div>
-					<div class="col-md-4">
-						<a href="img/bp.jpeg" class="img-pop-up img-gal gallery_img">
-							<div class=" single-gallery-image" style="background: url(img/bp.jpeg);"></div>
-						</a>
-					</div>
-					<div class="col-md-4">
-						<a href="img/123.jpeg" class="img-pop-up img-gal gallery_img">
-							<div class="single-gallery-image" style="background: url(img/123.jpeg);"></div>
-						</a>
-					</div>
-				</div>
-			</div>
-        </div>
-    </section>
-    <!--::our_service part end::-->
-
-    <!--::review_part part start::-->
-    
-    <!--::review_part part end::-->
-
-    <!--::pricing part start::-->
-   
     <!--::pricing part end::-->
-
-    <!--::blog part start::-->
-    
-    <!--::blog part end::-->
 
 
     <!--::footer_part start::-->

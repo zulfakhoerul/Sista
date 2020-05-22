@@ -5,8 +5,8 @@
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>shotgear</title>
-  <link rel="icon" href="img/favicon.png">
+  <title>sista</title>
+  <link rel="icon" href="img/logo.png">
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <!-- animate CSS -->
@@ -25,6 +25,7 @@
   <link rel="stylesheet" href="css/slick.css">
   <!-- style CSS -->
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="{{url('fontawesome-free/css/all.min.css')}}">
 </head>
 
 <body>
@@ -63,7 +64,7 @@
             <div class="dropdown cart">
               <a class="dropdown-toggle" href="#" id="navbarDropdown3" role="button" data-toggle="dropdown"
                 aria-haspopup="true" aria-expanded="false">
-                <i class="flaticon-bag"></i>
+                <i class="fas fa-cart-plus"></i>
               </a>
               <!-- <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                                         <div class="single_product">
@@ -84,7 +85,7 @@
       <div class="row">
         <div class="col-lg-12">
           <div class="breadcrumb_iner text-center">
-            <div class="breadcrumb_iner_item">
+            <div class="breadcrumb_iner_item"><i class="fas fa-crown"></i>
               <h2>Formulir <br> <span>Pendaftaran Anggota</span></h2>
             </div>
           </div>
