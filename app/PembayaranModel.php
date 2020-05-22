@@ -15,4 +15,8 @@ class PembayaranModel extends Model
     							'harga',
                                 'status_bayar',
     							'id_penyewaan']; //field tabel 
+
+    public function Penyewaan() { //Penyewaan dimiliki oleh Pembayaran
+    	return $this->belongsTo(PenyewaanModel::class,'id_penyewaan');
+    }
 }

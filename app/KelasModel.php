@@ -22,4 +22,8 @@ class KelasModel extends Model
     	return $this->hasOne(JadwalModel::class,'id_kelas');
     	//nama_modelTabelrelasinya,foreignkey di tabel jadwal
     }
+
+    public function Anggota() {
+        return $this->belongsToMany(AnggotaModel::class,'detail_kelas','id_anggota','id_kelas');//model_tabel_yang_mau_disambungin, nama_tabel_perantara, foreignkey1_pada_tabel_penghubung, foreignkey2_pada_tabel_penghubung)
+    }
 }

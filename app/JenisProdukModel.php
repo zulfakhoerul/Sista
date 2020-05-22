@@ -13,6 +13,6 @@ class JenisProdukModel extends Model
     protected $fillable     = ['nama_jenis_produk']; //field tabel
 
     public function Produk() { //banyak produk memiliki 1 jenis produk
-        return $this->hasMany(ProdukModel::class);
+        return $this->hasMany(ProdukModel::class,'id_jenis_produk');
     }
 }
