@@ -10,12 +10,20 @@
             </ol>
           </div>
           <hr>
-         
+         @if(\Session::has('alert-success'))
+                    <div class="alert alert-success alert-dismissible" role="alert">
+                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                        <h6><i class="fas fa-sign-out-alt"></i><b> Success!!</b></h6>
+                        {{Session::get('alert-success')}}
+                    </div>
+                  @endif
           <!-- DataTable with Hover -->
             <div class="col-lg-12">
               <div class="card mb-4">
                 <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-                  <a href="{{url ('TambahSeniTari')}}" class="btn btn-success" >Tambah data</a>
+                  <a href="{{url ('admin/CrudSeniTari/TambahSeniTari')}}" class="btn btn-success" >Tambah data</a>
                 </div>
                 <div class="table-responsive p-3">
                   <table class="table align-items-center table-flush table-hover" id="dataTableHover">
@@ -45,11 +53,11 @@
                         <td>{{$tampil->id_seni_tari}}</td>
                         <td>{{$tampil->nama_seni_tari}}</td>
                         <td>
-                          <a class="btn btn-warning btn-sm" href="UbahSeniTari{{$tampil->id_user}}">
+                          <a class="btn btn-warning btn-sm" href="CrudSeniTari/UbahSeniTari{{$tampil->id_seni_tari}}">
                             <i class="fas fa-pencil-alt"></i>
                             Ubah
                           </a>
-                          <a class="btn btn-danger btn-sm" href="HapusSeniTari{{$tampil->id_user}}">
+                          <a class="btn btn-danger btn-sm" href="CrudSeniTari/HapusSeniTari{{$tampil->id_seni_tari}}">
                             <i class="fas fa-trash"></i>
                             Hapus
                           </a>

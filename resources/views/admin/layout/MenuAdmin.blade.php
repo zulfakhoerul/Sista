@@ -32,8 +32,8 @@
           </div>
         </div>
       </li>
-      <li class="nav-item {{ Request::is('CrudSeniTari')? "active":""}}">
-        <a class="nav-link" href="{{url ('CrudSeniTari')}}">
+      <li class="nav-item {{ Request::is('admin/CrudSeniTari')? "active":""}}">
+        <a class="nav-link" href="{{url ('admin/CrudSeniTari')}}">
           <i class="fab fa-fw fa-wpforms"></i>
           <span>Data Seni Tari</span>
         </a>

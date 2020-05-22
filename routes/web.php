@@ -107,7 +107,14 @@ Route::get('CrudAkunAnggota','CrudAkunAnggotaController@tampil_data');
 
 Route::get('CrudAkunAdmin','CrudAkunAdminController@tampil_data');
 
-Route::get('CrudSeniTari','CrudSeniTariController@tampil_data');
+Route::get('admin/CrudSeniTari','CrudSeniTariController@tampil_data');
+Route::get('admin/CrudSeniTari/TambahSeniTari','CrudSeniTariController@tambah');
+Route::post('AksiTambahSeniTari','CrudSeniTariController@store');
+Route::get('admin/CrudSeniTari/UbahSeniTari{id_seni_tari}','CrudSeniTariController@ubah');
+Route::post('admin/CrudSeniTari/AksiUbahSeniTari{id_seni_tari}','CrudSeniTariController@update');
+Route::get('admin/CrudSeniTari/HapusSeniTari{id_seni_tari}','CrudSeniTariController@delete');
+
+
 
 Route::get('admin/CrudProduk','CrudProdukController@tampil_data');
 Route::get('admin/CrudProduk/TambahProduk','CrudProdukController@tambah');
